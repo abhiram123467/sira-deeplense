@@ -1,2 +1,11 @@
 pytest
 torch  # Your deps
+torch
+torchvision
+pytest
+nbqa
+black[notebook]
+jupyter
+numpy
+matplotlib
+plotly  # For viz

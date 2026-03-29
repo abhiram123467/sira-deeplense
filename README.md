@@ -405,3 +405,8 @@ Proposed 12-week GSoC sprint:
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:e94560,40:0f3460,80:16213e,100:0d0d0d&height=130&section=footer" width="100%"/>
 
 </div>
+## Demo
+```bash
+python scripts/visualize.py
+```
+[depth_viz.html](output/depth_viz.html)

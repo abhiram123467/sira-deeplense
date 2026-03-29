@@ -1,0 +1,23 @@
+name: CI Pipeline
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    
+    - name: Install deps
+      run: |
+        pip install -r requirements.txt pytest
+    
+    - name: Lint notebooks
+      run: pip install nbqa black[notebook] && nbqa black notebooks/
+    
+    - name: Run tests
+      run: pytest tests/ -v

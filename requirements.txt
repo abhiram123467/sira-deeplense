@@ -1,11 +1,10 @@
-pytest
-torch  # Your deps
-torch
+torch>=2.0.0
 torchvision
 pytest
 nbqa
-black[notebook]
+black[jupyter]==23.3.0
 jupyter
 numpy
 matplotlib
-plotly  # For viz
+pandas
+plotly

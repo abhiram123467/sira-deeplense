@@ -1,2 +1,10 @@
+torch>=2.0.0
+torchvision
 pytest
-torch  # Your deps
+nbqa
+black[jupyter]==23.3.0
+jupyter
+numpy
+matplotlib
+pandas
+plotly
